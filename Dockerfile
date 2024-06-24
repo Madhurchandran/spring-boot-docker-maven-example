@@ -5,7 +5,7 @@ FROM openjdk:8-jdk
 EXPOSE 8080
 
 # Add the application's jar to the container
-ADD target/spring-boot-docker-maven-example.jar spring-boot-docker-maven-example.jar
+ADD target/spring-boot-docker-maven.jar spring-boot-docker-maven.jar
 
 # Run the jar file
-ENTRYPOINT ["java","-jar","spring-boot-docker-maven-example.jar"]
+ENTRYPOINT ["java","-jar","spring-boot-docker-maven.jar"]
